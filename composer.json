@@ -12,7 +12,7 @@
     },
     "autoload": {
     	"psr-4": {
-    		"Lucio\\Cart\\": "src/"
+    		"App\\": "src/App/"
     	}
     }
 }

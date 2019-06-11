@@ -1,15 +1,20 @@
+###Aplicação simples orientado a testes utilizando PHPUnit
+
 Existem 3 tipos de testes automatizados:
- - unitarios
+ - unitários
  - integração
  - interface
 
- composer init (para iniciar o projeto com phpunit)
-  - em dependencias vc digita "no"
-  - em require-dev vc digita "yes"
-  - logo em seguida digite em "phpunit"
- ou senão instale a dependencia depois com  	  	composer require phpunit/phpunit --dev 	
+ Para iniciar o projeto, digite: _composer init_
+  1. em dependências vc digita "_no_"
+  2. em require-dev vc digita "_yes_"
+  3. logo em seguida digite em "*_phpunit_*"
+ ou senão instale a dependência depois com _composer require phpunit/phpunit --dev_
+ 
+ Para executar os testes nas classes na pasta _tests/ClassNameTest_, digite:
 
+ - _vendor/bin/phpunit tests/App/ClassNameTest.php_
 
- vendor/bin/phpunit tests/App/ProductTest.php
-
- video assistido: Aprenda a testar seu software de verdade em 42:15
+ video assistido: **Aprenda a testar seu software de verdade** em _1:07:34_
+ 
+ https://www.youtube.com/watch?v=ld2eC2DBrk0&t=2547s

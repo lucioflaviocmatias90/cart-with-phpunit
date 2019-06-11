@@ -2,11 +2,14 @@
 
 namespace Test\App;
 
-use \PHPUnit\Framework\TestCase;
 use App\Product;
+use PHPUnit\Framework\TestCase;
 
 class ProductTest extends TestCase
 {
+	/**
+	* @dataProvider getSetProvider
+	*/
 	public function testGetterAndSetterName($name, $description, $price)
 	{
 		$product = new Product();
@@ -21,11 +24,11 @@ class ProductTest extends TestCase
 		$this->assertEquals($price, $product->getPrice());
 	}
 
-	public function getProvider()
+	public function getSetProvider()
 	{
 		return [
 			['Apple Watch', 'Super Relógio Caro', 1000],
-			['Xiaomi Watch', 'Super Relógio Barato', 400],
+			['Xiaomi Watch', 'Super Relógio Barato', 400]
 		];
 	}
 
@@ -34,5 +37,3 @@ class ProductTest extends TestCase
 		$this->assertEquals(1, 1);
 	}
 }
-
-?>

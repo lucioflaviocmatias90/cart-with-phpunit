@@ -17,45 +17,69 @@ class Product
 		$this->price = $price;
 	}
 
-	public function getId()
-	{
-		return $this->id;
-	}
+    /**
+     * @return null
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
-	public function setId($id)
-	{
-		$this->id = $id;
-	}
+    /**
+     * @param null $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
 
-	public function getName()
-	{
-		return $this->name;
-	}
+    /**
+     * @return null
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
 
-	public function setName($name)
-	{
-		$this->name = $name;
-	}
+    /**
+     * @param null $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 
-	public function getDescription()
-	{
-		return $this->description;
-	}
+    /**
+     * @return null
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
 
-	public function setDescription($description)
-	{
-		$this->description = $description;
-	}
+    /**
+     * @param null $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
 
-	public function getPrice()
-	{
-		return $this->price;
-	}
+    /**
+     * @return null
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
 
-	public function setPrice($price)
-	{
-		$this->price = $price;
-	}
+    /**
+     * @param null $price
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
 }
 
 ?>

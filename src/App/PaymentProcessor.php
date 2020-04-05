@@ -145,6 +145,7 @@ class PaymentProcessor
     public function setProvider($provider)
     {
         $this->provider = $provider;
+        return $this;
     }
 
     public function process()

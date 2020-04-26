@@ -33,6 +33,7 @@ class PaymentProcessorTest extends TestCase
         $paymentProcessor->setCreditCardNumber('400000111111');
         $paymentProcessor->setCreditCardExpirationDate('10/29');
         $paymentProcessor->setCreditCardCVV('123');
+        $paymentProcessor->setProvider($paypoom);
 
         $result = $paymentProcessor->process();
 
